@@ -1,0 +1,23 @@
+.left_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ._Leave_Balance_second_title{
+        .daft_filter{
+            display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    border: 1px solid rgba(128, 128, 128, 0.408);
+    padding: 7px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+        }
+    }
+}
+
+
+.left_filter_p_l_my{
+    margin-left: -20px;
+    margin-top: 5px;
+}

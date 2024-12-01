@@ -1,0 +1,115 @@
+// @use "../../scss/" as *;
+@import "../../styles/variables";
+#containerofCskfpx {
+  width: 96% !important;
+  .lastbarx12s {
+    width: 100% !important;
+    // background: $primary09;
+    height: 70px;
+    margin-top: 0px;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    // justify-content: space-between;
+    justify-content: flex-end;
+    display: none;
+  }
+  #flexboxppc {
+    display: flex;
+    align-items: center;
+    // border: 1px solid red !important;
+    width: 100% !important;
+    .card-title02 {
+      flex: 0.2;
+    }
+
+    .card-title05 {
+      flex: 0.4;
+    }
+    .card-title06 {
+      flex: 0.1;
+    }
+  }
+
+  .skeleton {
+    background-color: $primary06;
+    background-image: linear-gradient(
+      90deg,
+      rgba($white, 0),
+      rgba($white, 0.5),
+      rgba($white, 0)
+    );
+    background-size: 40px 100%;
+    background-repeat: no-repeat;
+    background-position: left -40px top 0;
+    animation: shine 1s ease infinite;
+    padding: 14px 15px;
+    padding: 4px 15px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Segoex2";
+    font-size: 14px;
+    border-radius: 250px;
+    margin: 11px 14px 12px 13px;
+    margin: 16px 14px 17px 13px;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: right -40px top 0;
+    }
+  }
+
+  .abarxs13s1 {
+    background-color: $primary06;
+    background-image: linear-gradient(
+      90deg,
+      rgba($white, 0),
+      rgba($white, 0.5),
+      rgba($white, 0)
+    );
+    background-size: 40px 100%;
+    background-repeat: no-repeat;
+    background-position: left -40px top 0;
+    animation: shine 1s ease infinite;
+    padding: 14px 15px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Segoex2";
+    font-size: 14px;
+    border-radius: 5px;
+    display: none;
+
+    width: 268px;
+    height: 30px;
+    margin: auto 10px;
+  }
+  .abarxs13s2 {
+    background-color: $primary06;
+    background-image: linear-gradient(
+      90deg,
+      rgba($white, 0),
+      rgba($white, 0.5),
+      rgba($white, 0)
+    );
+    background-size: 40px 100%;
+    background-repeat: no-repeat;
+    background-position: left -40px top 0;
+    animation: shine 1s ease infinite;
+    padding: 14px 15px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Segoex2";
+    font-size: 14px;
+    border-radius: 250px;
+    width: 168px;
+    height: 32px;
+    margin: auto 10px;
+  }
+}

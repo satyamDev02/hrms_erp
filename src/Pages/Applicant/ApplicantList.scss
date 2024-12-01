@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+
+ .status-display {
+            // z-index: 9;
+            padding: 8px 12px;
+            border-radius: 44px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            div {
+              display: flex;
+              gap: 5px;
+            }
+          
+            &.new {
+              background-color: #08e6c83a;
+              color: #05938a;
+            }
+            &.schedule {
+              background-color: #0746e731;
+              color: #1d6daf;
+            }
+             &.on-hold{
+              background-color: #dce70731;
+              color: #afac1d;
+            }
+            &.interviewed {
+              background-color: #0cad542f;
+              color: #0cad55;
+            }
+            &.rejected {
+              background-color: #f0d4d4;
+              color: #c70000;
+            }
+            &.hired {
+              background-color: #fee7e7;
+              color: #ff00c3;
+            }
+            
+            .left_dot {
+              width: 10px;
+              margin-right: 5px;
+              height: 10px;
+              border-radius: 50%;
+              // background: #000;
+              &.new {
+                background-color:#047e91;
+              }
+              &.on-hold{
+                background-color: #afac1d;
+              }
+              &.interviewed {
+                background-color: #54d92b;
+              }
+              &.rejected {
+                background-color: #c70000;
+              }
+              &.hired {
+                background-color: #ff00c3;
+              }
+               &.schedule {
+                background-color: #1100ff;
+              }
+            }
+          }
+
+ #filter_left{
+    display: none;
+  }
+
+
+.td{
+      white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    padding: 10px;
+}

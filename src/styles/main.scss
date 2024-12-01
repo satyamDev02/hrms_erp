@@ -1,0 +1,118 @@
+@use "./variables.scss" as *;
+
+
+
+//date range classesss
+
+.rdrDefinedRangesWrapper {
+  width: fit-content !important;
+}
+
+.rdrInputRanges {
+  display: none !important;
+}
+
+.rdrStaticRangeLabel {
+  width: max-content !important;
+  width: 150% !important;
+}
+
+.rdrDateDisplay {
+  margin: 5px !important;
+  display: none !important;
+}
+
+.rdrDateDisplayItemActive {
+  border-color: $primary !important;
+}
+
+.rdrMonthAndYearWrapper {
+  padding: 0 !important;
+  // height: 40px;
+  border-bottom: 1px solid $stroke;
+  height: 35px !important;
+}
+
+.rdrStaticRangeSelected {
+  color: $primary !important;
+}
+
+.rdrDefinedRangesWrapper {
+  background: $white !important;
+}
+
+.rdrStaticRange {
+  background: $white !important;
+  border-color: $stroke;
+  color: $btext;
+}
+
+.rdrDateDisplayWrapper {
+  background: $white !important;
+}
+
+.rdrDateDisplayItem {
+  background: $white !important;
+}
+
+.rdrDefinedRangesWrapper {
+  border-color: $stroke;
+}
+
+.rdrCalendarWrapper {
+  background: $white !important;
+}
+
+.rdrMonthAndYearPickers select {
+}
+
+.rdrNextPrevButton {
+}
+
+.rdrNextButton i {
+}
+
+.rdrPprevButton i {
+}
+
+.rdrDayNumber span {
+}
+
+.rdrDay {
+  height: 45px !important;
+}
+
+.rdrDayPassive {
+}
+
+.rdrMonth {
+  width: 25.667em !important;
+  padding-bottom: 5px !important;
+}
+
+.rdrDay:focus {
+  outline-color: red !important;
+}
+
+.rdrDayHovered {
+  outline-color: red !important;
+  border-color: red !important;
+}
+
+.rdrInRange {
+  background: $primary !important;
+}
+
+.rdrStartEdge {
+  background: $primary !important;
+}
+
+.rdrDayToday .rdrDayNumber span:after {
+  background: $white !important;
+}
+
+.rdrEndEdge {
+  background: $primary !important;
+}
+
+//date range classesss

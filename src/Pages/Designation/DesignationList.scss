@@ -1,0 +1,219 @@
+#inputD {
+  width: 70px !important;
+  // border: 1px solid red !important;
+}
+
+.tableD {
+  table-layout: fixed;
+  width: 100%;
+}
+
+
+#Description2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  padding: 10px;
+}
+
+#despt {
+  margin-top: -30px !important;
+  display: flex;
+  flex-direction: column !important;
+
+  textarea {
+    width: 100% !important;
+    height: 60px;
+    padding: 10px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(134, 127, 127, 0.39);
+    border-radius: 10px;
+    outline: none;
+    margin-top: 5px;
+    resize: none;
+  }
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 547px;
+    height: 298px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -167px;
+
+    .add-designation-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: -10px;
+      width: 586px;
+      height: 67px;
+      border-radius: 6px;
+      top: -20px;
+      left: -19.5px;
+      gap: 0px;
+      opacity: 0px;
+      background: #ededed;
+      position: relative;
+
+      h2 {
+        margin: 28px;
+        font-size: 18px;
+        color: #30005a;
+      }
+
+      .close_btn {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 1.5em;
+        margin-right: 12px;
+
+        &:hover {
+          color: red;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .add-designation-body {
+      form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          margin-top: 10px;
+          margin-bottom: 5px;
+          font-size: 0.9em;
+          color: #555;
+        }
+
+        input,
+        textarea {
+          padding: 20px 5px;
+          margin-bottom: 15px;
+          border: 1px solid #e9e9e9;
+          border-radius: 6px;
+          //   width: 554px;
+          box-sizing: border-box;
+          background: #fbfbfb;
+          outline: none;
+          margin-top: 5px;
+          height: 40px;
+        }
+
+        input:hover {
+          border: 1px solid #c500fb;
+          box-shadow: 0 0 0 2px #730fad4e;
+        }
+
+        .side-by-side {
+          display: flex;
+
+          //   justify-content: space-between;
+          //   gap: 9px;
+          .dropdown_designation_ {
+            // border: 1px solid red;
+            width: 100% !important;
+          }
+
+          input {
+            // width: calc(100% - 13px);
+            width: 90%;
+            height: 35px;
+          }
+        }
+
+        textarea {
+          height: 80px;
+        }
+
+        button[type="submit"] {
+          background-color: #400f6f;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 7px;
+          cursor: pointer;
+          width: 190px;
+          font-size: 1em;
+          position: relative;
+          left: 172px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #c500fb00;
+          box-shadow: 0 0 0 2px #730fad00;
+
+          svg {
+            color: #fff;
+            margin-left: 5px;
+          }
+
+          &:hover {
+            border: 1px solid #c500fb;
+            box-shadow: 0 0 0 2px #730fad4e;
+          }
+        }
+      }
+    }
+  }
+}
+
+.popup-overlay .popup-content .add-designation-body form .side-by-side {
+  margin-bottom: -20px;
+}
+
+.popup-overlay .popup-content .add-designation-body form textarea {
+  //   width: 99.8%;
+  margin-top: 5px;
+  resize: none;
+
+  &:hover {
+    border: 1px solid #c500fb;
+    box-shadow: 0 0 0 2px #730fad4e;
+  }
+}
+
+
+#dipar_3jeij {
+  width: 44%;
+  height: 30px;
+  margin-left: -10px;
+}
+
+.top_gap_de32 {
+  margin-top: 5px !important;
+}
+
+// .error_message {
+//         font-size: 12px;
+//         color: red;
+//         font-weight: 500;
+//         display: flex;
+//         align-items: center;
+//         gap: 12px;
+//         margin-top: 5px;
+//         margin-bottom: 20px !important;
+//       }
+
+.color_red {
+  font-weight: 400;
+  color: rgb(255, 0, 0) !important;
+}

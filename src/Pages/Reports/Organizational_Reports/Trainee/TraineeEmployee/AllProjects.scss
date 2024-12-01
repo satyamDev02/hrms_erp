@@ -1,0 +1,173 @@
+.tr_CartPie {
+  width: 98%;
+  height: 400px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  
+  margin-left: 20px;
+  .TotalLeaves_Project {
+    // border: 1px solid red  !important;
+    margin: 20px;
+    border: 1px solid rgba(125, 125, 125, 0.305);
+    border-radius: 10px;
+    width: 60%;
+    height: 400px;
+
+    .total-leaves {
+      border-bottom: 1px solid rgba(113, 110, 110, 0.328);
+      margin: 0 20px;
+      display: flex;
+      font-size: 14px;
+      color: grey;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 0px;
+    }
+    .pieChart_pro {
+      width: 100%;
+      height: 400px;
+      margin-left: 60px;
+      margin-top: -50px;
+    }
+  }
+  .UpcomingStatus {
+ border: 1px solid #7d7d7d4e;
+    border-radius: 10px;
+        width: 37%;
+        
+    height: 400px;
+    margin-right: 20px !important;
+    h2{
+      font-size: 17px;
+      color: #2A2A2A;
+      border-bottom: 1px solid #7d7d7d4e ;
+      margin: 8px 20px;
+      padding-bottom: 8px;
+      opacity: 0.9;
+      padding: 5px;
+    }
+      
+    
+    .trainingList {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      // border: 1px solid red;
+      margin: 20px 0;
+      width: 100%;
+      .content_list{
+              margin: 10px 0;
+
+        width: 92%;
+        display: flex;
+      align-items: center;
+      justify-content: space-between ;
+      .svg_{
+        border-radius: 50%;
+        background: #F7EEFF;
+        padding: 8px;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .text_2{
+        margin-left: -60px;
+        h5{
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 4px;
+        }
+        p{
+          font-size: 12px;
+          font-weight: 500;
+          color: #8080809b;
+        }
+      }
+      .text__1{
+          color: #8080809b;
+          font-size: 12px;
+          
+      }
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .tr_CartPie{
+    flex-direction: column;
+    height: fit-content !important;
+    // border: 1px solid red !important;
+  }
+  .tr_CartPie .TotalLeaves_Project .pieChart{
+    height: 350px;
+    scale: 0.9;
+  }
+  .tr_CartPie .TotalLeaves_Project {
+    width: 94% !important;
+    margin-left: -10px;
+  }
+  .tr_CartPie  .UpcomingStatus {
+    width: 94% !important;
+  }
+}
+
+.custom_legend_pro {
+  display: flex;
+  flex-direction: column;
+  // gap: 20px;
+  align-items: start;
+  justify-content: start;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-left: -40px;
+  // border: 1px solid red;
+  width: fit-content;
+  gap: 20px;
+  margin-top: -45%;
+  
+}
+
+.recharts-text ,.recharts-pie-label-text{
+    color: #2A2A2A !important;
+}
+.recharts-pie-label-line{
+    color: #000;
+    background: #000 !important;
+}
+
+.projec_Balance_second_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 58%;
+  margin: 10px 45px;
+  // border-bottom: 1px solid rgba(128, 128, 128, 0.365);
+  border-bottom: none !important;
+  padding-bottom: 10px;
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .print_right_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    border: 1px solid rgba(128, 128, 128, 0.408);
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.print_right_icon_233{
+  width: 190px !important;
+  margin-left: 20px !important;
+}

@@ -1,0 +1,101 @@
+.sift_hours_td {
+    // border: 1px dashed rgb(21, 188, 13);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+#DateDropdowns {
+    z-index: 99;
+}
+
+.week_TD {
+    min-width: 105px;
+    text-align: center !important;
+}
+
+@media only screen and (max-width: 1333px) {
+    .week_sift {
+        overflow-y: auto !important;
+        // padding-left: 50px !important;
+    }
+
+    .week_TD {
+        min-width: 130px;
+        text-align: center !important;
+    }
+
+    .stick {
+        // position: fixed;
+        position: sticky;
+        /* Make the header and first cell sticky */
+        left: 0;
+        /* Stick to the left */
+        background-color: white;
+        /* Background color of the fixed header/cell */
+        z-index: 1;
+    }
+
+    .stick2 {
+        background-color: #f2eef5 !important;
+    }
+}
+
+.week_sift_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        svg {
+            font-size: 30px !important;
+        }
+    }
+}
+
+.pic_flex {
+    display: flex;
+    align-items: center;
+    // border: 1px solid red !important;
+}
+
+.sift_img_pic {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 5px;
+    // border: 2px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ddd;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

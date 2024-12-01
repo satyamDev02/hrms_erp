@@ -1,0 +1,57 @@
+  .status-dropdown {
+         
+          width: fit-content;
+          .status-container {
+            position: relative;
+            margin-bottom: 10px;
+          }
+
+          .status-display {
+            //  border: 11px solid red !important;
+          // z-index: 9;
+              padding: 8px 12px;
+            border-radius: 44px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            div {
+              display: flex;
+              gap: 5px;
+            }
+          
+            &.partially-vaccinated {
+              background-color: #0877e678;
+              color: #0070f3 !important;
+            }
+          
+            &.fully-vaccinated {
+              background-color: #0cad542f;
+              color: #0cad55;
+            }
+            &.not-vaccinated {
+              background-color: #f0d4d4;
+              color: #c70000;
+            }
+            
+
+            .left_dot {
+              width: 10px;
+              margin-right: 5px;
+              height: 10px;
+              border-radius: 50%;
+              // background: #000;
+              &.partially-vaccinated {
+                background-color:#0077ff ;
+              }
+             
+              &.fully-vaccinated {
+                background-color: #54d92b;
+              }
+              &.not-vaccinated {
+                background-color: #c70000;
+              }
+            
+            }
+          }
+
+        }

@@ -1,0 +1,107 @@
+// App.scss
+@import "./variables";
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  // font-weight: <weight>;
+  font-style: normal;
+}
+    ::selection {
+  background: #8400ff;   // Background color of the selected text
+  color: rgb(0, 0, 0);        // Text color of the selected text
+}
+.action_card{
+   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+}
+.NavBar {
+  // position: fixed;
+  // width: 100vw;
+}
+.app {
+  // <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 100 to 900
+  /* width */
+
+  .sideBar_app2 {
+    // margin-top: 56px;
+    width: 117px;
+
+    //  border: 1px solid red;
+    // width: 300px;
+    // height: 100vw !important;
+    overflow-y: auto !important;
+    position: fixed;
+    z-index: 9;
+  }
+  .sideBar_app {
+    //  border: 1px solid rgb(0, 102, 255);
+
+    // margin-top: 56px;
+    width: 120px;
+    // height: 100% !important;
+    overflow-y: auto !important;
+    position: fixed;
+    z-index: 9;
+  }
+  .expanded {
+    // border: 1px solid red;
+    width: 300px;
+  }
+}
+
+.sideBar_app:hover {
+  // width: 230px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+#app_ {
+  max-width: 2400px;
+  margin: 0 auto;
+  position: relative;
+  // border: 1px solid red;
+}
+
+.content {
+  // border: 1px solid red;
+  // margin-top: 56px;
+  width: calc(100vw - 105px);
+  height: calc(100vh - 56px);
+  margin-left: 105px;
+  // position: fixed;
+  overflow-y: auto;
+  // margin-left: 100px;
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ab81d33b;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #410f6f9d;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #400f6f;
+  }
+}
+@media (max-width: 700px) {
+  .content {
+    margin-left: 0;
+  }
+}
+
+
+.css-q6vpb4{
+  z-index: 99999999999999999999;
+}
+
+
+

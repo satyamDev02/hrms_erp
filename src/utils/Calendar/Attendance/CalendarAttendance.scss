@@ -1,0 +1,175 @@
+
+@import "../../../styles/variables";
+
+.day_name_attendance {
+  text-align: center;
+  font-weight: bold;
+  color: #320b57b8;
+  padding: 0.5rem;
+  background-color: #faf6ff;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+        font-size: $fontSize12;
+
+}
+.curr_moth_{
+    color: #1a0330b7;
+    font-size: 18px;
+}
+.calendar-header-att {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  .C_Left {
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -10px;
+    select,button{
+        border-radius: 8px;
+    }
+    select{
+      background: #fff;
+    }
+  }
+  .C_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      height: 40px;
+      color: #400F6F;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border: 1px solid #400F6F;
+      border-radius: 8px;
+      background: #ffffff;
+      svg{
+        color: #400F6F;
+      }
+    }
+    .Current_month{
+        background-color: #6a1b9a;
+color: #fff;
+    }
+    svg {
+      color: #fff;
+    }
+  }
+  select {
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    color: #6a1b9a;
+    font-weight: bold;
+  }
+
+  .apply-btn {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+}
+
+
+.date-flex{
+    display: flex !important;
+align-items: center !important;
+justify-content: space-between !important;
+
+}
+
+
+ .date-flex {
+  
+    .leave {
+      padding: 5px 7px;
+      border-radius: 20px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      color: #4976f4;
+      .dot {
+        padding: 1px;
+        background: #4976f4;
+      }
+    }
+    .Present {
+      padding: 5px 7px;
+      border-radius: 20px;
+      background: #4977f430;
+      display: flex;
+      align-items: center;
+      color: #4976f4;
+      font-size: $fontSize12;
+      .dot {
+        padding: 1px;
+        background: #4976f4;
+      }
+    }
+    .Half-day{
+      padding: 5px 7px;
+      border-radius: 20px;
+      background: #944baf34;
+      display: flex;
+      align-items: center;
+            font-size: $fontSize12;
+
+      color: #68058c;
+      .dot {
+        padding: 1px;
+        background: #68058c;
+      }
+    }
+    .holiday {
+      padding: 5px 7px;
+      border-radius: 20px;
+      background: #ffffff92;
+      display: flex;
+      align-items: center;
+      
+      .dot {
+        padding: 1px;
+        background: #ea530e;
+      }
+    }
+    .Absent {
+      padding: 5px 7px;
+      border-radius: 20px;
+      background: #ff00003f;
+      display: flex;
+      align-items: center;
+      color: red;
+            font-size: $fontSize12;
+
+      .dot {
+        padding: 1px;
+        background: #ff0000;
+      }
+    }
+  }
+
+  .shift_given{
+    margin: 0 auto;
+    font-size: $fontSize10;
+    width: 100%;
+    color: black;
+    background: #ffffff;
+    padding: 5px;
+    margin-left: -5px ;
+    border-radius: 8px;
+}

@@ -1,0 +1,317 @@
+@import "../../styles//variables";
+
+.Overview{
+    -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  // border: 1px solid red;
+  margin: 10px 30px ;
+  margin-top: 15px;
+  h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #2A2A2A;
+
+  }
+  .Overview4{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    .Overview_box{
+      height: 114px;
+      border-radius: 11px;
+      box-shadow: 0px 0px 4px 0px #00000014;
+
+      background: linear-gradient(180deg, rgba(235, 231, 238, 0.5) 0%, rgba(227, 208, 241, 0.5) 100%);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      .Overview_Left{
+        .icon{
+          padding: 15px;
+          background: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+        }
+      }
+      .Overview_Right{
+        p{
+          color: #2A2A2A;
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+        h3{
+          font-size: 40px;
+          color: #400F6F;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+      .Overview4{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+  }
+}
+
+
+.allEmployeeList {
+  // margin-top: 10px;
+  // margin-left: -10px;
+  // display: flex;
+  // width: 100%;
+  height: 60px;
+  padding: 10px;
+  .head {
+    width: 98.2%;
+    height: 60px;
+    border: 1px solid rgb(0, 255, 110);
+  }
+  // src/EmployeeTable.scss
+
+  .employee-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //   width: 100%;
+    margin: 0px auto;
+    font-family: Arial, sans-serif;
+    .table-toolbar {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+table {
+    border-radius: 10px !important;
+    // overflow: hidden !important; /* Important for border-radius to work */
+}
+
+
+    table {
+      width: 97%;
+      border-collapse: collapse;
+      // border: 2px solid red !important;
+      border-radius: 10px !important;
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #dddddd5d;
+        border-left: 1px solid #dddddd5d;
+        border: 1px solid #dddddd5d;
+        font-weight: 500;
+        .status-dropdown {
+         
+          width: fit-content;
+          .status-container {
+            position: relative;
+            margin-bottom: 10px;
+          }
+
+       
+
+        
+        }
+      }
+      td{
+        cursor: pointer;
+      }
+
+      th {
+
+        color: $primary-color;
+        background-color: $lightprimary;
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          span {
+            // margin-left: 10px;
+            cursor: pointer;
+            align-items: end;
+
+            align-self: flex-end;
+          }
+        }
+      }
+
+      tr:hover {
+        background-color: #d8d4d441 !important;
+      }
+
+      select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="checkbox"] {
+        z-index: 0 !important;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #000;
+        cursor: pointer;
+        position: relative;
+        border-radius: 3px;
+        border: 1px solid grey;
+      }
+
+      input[type="checkbox"]:not(:checked) {
+        background-color: white;
+       
+      }
+
+      input[type="checkbox"]:checked {
+        background-color: $primary-color;
+      }
+
+      input[type="checkbox"]:checked::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    }
+
+    //
+  }
+
+}
+
+#deleteAll{
+  cursor: pointer;
+  // border: 1px solid red;
+  // width: ;
+  // margin-top: -2px;
+}
+#deleteThis{
+  // position: absolute;
+  cursor: pointer;
+  z-index: 11;
+  // margin-top: -2px;
+
+}
+
+
+@media (max-width: 1505px){
+    // .allEmployeeList .employee-table{
+  //       margin: 20px auto;
+  //       overflow-x:  auto !important;
+  //   }
+  // .EmpOn_Second_Head{
+  //   flex-direction: column;
+  // }
+  // .EmpOn_Second_Head .right{
+  //   margin-top: 10px;
+  // }
+
+}
+@media (max-width: 1355px) {
+  
+  .filterLeftCloseAtt{
+    margin-top: 230px !important;
+  }
+
+  .allEmployeeList .employee-table table {
+    // min-width: 1340px ; /* Ensure minimum width for the table */
+    // margin: 0 auto; /* Center align the table */
+    // overflow-x: auto ;
+  }
+
+  .EmpOn_main_container .top-bar ._div {
+    display: none !important; 
+  }
+
+  #allEmp {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1035px) {
+  // .EmpOn_Second_Head .left {
+  //   display: grid !important;
+  //   height: fit-content !important;
+  //   grid-template-columns: repeat(3, 1fr) !important;
+  //   width: 82vw !important;
+  //   gap: 10px;
+  // }
+
+  .allEmployeeList .employee-table {
+    // margin-top: 65px !important;
+    // overflow-x: auto; /* Ensure table remains scrollable */
+  }
+
+  .allEmployeeList .employee-table table {
+    min-width: 100%; /* Adjust table width to fit container */
+    margin: 0 auto; /* Center align the table */
+  }
+}
+
+
+.status-display {
+            //  border: 11px solid red !important;
+          // z-index: 9;
+              padding: 8px 12px;
+            border-radius: 44px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            div {
+              display: flex;
+              gap: 5px;
+            }
+          
+          //  emp.status == 0 ? 'Resolved' : emp.status == 1 ? 'Pending' : emp.status == 2 ? 'Rejected' :''
+            &.Pending {
+              background-color: #f3ff1031;
+              color: #b8b501;
+            }
+            &.Resolved {
+              background-color: #0cad542f;
+              color: #0cad55;
+            }
+            &.Rejected {
+              background-color: #f0d4d4;
+              color: #c70000;
+            }
+           
+
+            .left_dot {
+              width: 10px;
+              margin-right: 5px;
+              height: 10px;
+              border-radius: 50%;
+              // background: #000;
+             
+              &.Pending{
+                background-color: #cecb14;
+              }
+              &.Resolved {
+                background-color: #54d92b;
+              }
+              &.Rejected {
+                background-color: #c70000;
+              }
+              
+            }
+}

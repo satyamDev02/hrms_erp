@@ -1,0 +1,245 @@
+
+
+
+// $primary: rgb(35, 112, 255);
+$primary: #5d369f;
+$lightprimary: #9b7dce;
+$lightprimary02: #efebf5;
+$lightprimary03: hsla(264, 33%, 94%, 0.6);
+$ultralightprimary: rgba(155, 125, 206, 0.25);
+$primaryshadow: hsla(262, 49%, 42%, 0.1);
+$secondstroke: #ac88e970;
+$thirdstroke: #bbb9c9;
+$forthlightstroke: rgba(187, 185, 201, 0.35);
+$stroke: #d0d7de;
+$primary02: #2a2a2a;
+$primary03: #eaeaf0;
+$primary09: #f6f8fa;
+$childprimary09: #f6f8fa88;
+$primary04: rgba(8, 11, 54, 0.1);
+$primary05: #797979;
+$primary06: #091e420f;
+$primary07: #f6e8e8;
+$green: #238636;
+$primary08: #e8f0fe;
+$primary10: #06070724;
+
+$primary11: #091e420c;
+$primary13: hsla(207, 22%, 28%, .85);
+// $primary12: #e5f3fd8a;
+// $primary14: lavenderblush;
+// $primary15: seashell;
+$parentprimary12: hsla(205, 86%, 95%, 1);
+$primary12: hsla(205, 86%, 95%, 0.45);
+$parentprimary14: hsla(340, 100%, 97%, 1);
+$primary14: hsla(340, 100%, 97%, 0.45);
+$parentprimary15: hsla(25, 100%, 97%, 1);
+$primary15: hsla(25, 100%, 97%, 0.45);
+
+$primary16: ghostwhite;
+
+
+// $primary51: hsla(218, 85%, 54%, 0.1);
+$primary51: hsla(218, 85%, 54%, 0.0);
+$primary52: rgb(255, 46, 18);
+// $primary51: hsla(218, 85%, 54%, 0.001);
+
+$white: #ffffff;
+$black: #000000;
+$wtext: #f5f5f5;
+// $btext: #3c3c3c;
+$btext: #424242;
+// $lightbtext: #8b8b8b;
+// $lightbtext02: #959494;
+$lightbtext: #555555;
+$lightbtext02: #555555;
+
+
+$inputfilled: #e8f0fe6b;
+$orangefilled: #d28e3d;
+
+$mobile-width: 600px;
+$tablet-width: 1023px;
+
+// $greenbackbutton: #44b678; 
+$greenbackbutton: #5d369f;
+// $greenbackbutton02: #44b678; 
+$greenbackbutton02: #44b678;
+
+@mixin flex($aligin-item, $justify-content) {
+  display: flex;
+  align-items: $aligin-item;
+  justify-content: $justify-content;
+}
+
+@mixin font($sizefont) {
+  font-size: $sizefont;
+  font-family: $font-family;
+}
+
+@mixin transition($property: all,
+  $duration: 0.45s,
+  $ease: cubic-bezier(0.65, 0, 0.076, 1)) {
+  transition: $property $duration $ease;
+}
+
+@mixin overlay {
+  background-color: rgba($color: #000000, $alpha: 0.6);
+}
+
+@mixin grad01 {
+  background: #c9d6ff;
+  background: -webkit-linear-gradient(to right, #5fc373, #169e31);
+  background: linear-gradient(to right, #5fc373, #169e31);
+}
+
+@mixin grad02 {
+  background: #ad5389;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #3c1053,
+      #ad5389);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #5d369f,
+      #ad5389);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin focusVisible {
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 4px 2px rgba(80, 2, 89, 0.2);
+    box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) 1px 0.25rem #0d6efd40;
+    box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) 1px 0.2rem #855ad046;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../../public/segoe-ui/Segoe\ UI.ttf") format("truetype");
+  /* Adjust the path as per your folder structure */
+}
+
+@font-face {
+  font-family: "Segoex1";
+  src: url("../../public/segoe-ui-font/SegoeUI.ttf") format("truetype");
+  /* Adjust the path as per your folder structure */
+}
+
+@font-face {
+  font-family: "Segoex2";
+  src: url("../../public/segoe-ui-font/SegoeUI-SemiBold.ttf") format("truetype");
+  /* Adjust the path as per your folder structure */
+}
+
+// $font-family: "Inter";
+$font-family: "Inter", "Source Sans Pro", Helvetica, Arial, sans-serif;
+// $font-family: "Segoex1";
+$font-family02: "Inter";
+// $font-family: "Segoe UI", "Inter", "Source Sans Pro", Helvetica, Arial, sans-serif;
+// $font-family: "Inter", "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+// variables.scss
+$primary-color: #320b57;
+$lightprimary:#946fb618;
+$secondary-color: #A3C701;
+$text-color: #fff;
+$background-color: #320b57e8;
+$border-color: #c500fb;
+$hover-color: rgba(0, 0, 0, 0.365);
+$animation-duration: 0.3s;
+$box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.326);
+$border:rgba(0, 0, 0, 0.131);
+
+$BoxHoverShadow:0px 0px 20px 0px #6565652d;
+// Fonts
+$font_size_details_grey: 13px;
+$font_size_details_color: 14px;
+$font_size_small_title: 12px;
+
+$font_size_base: 14px;
+$font_size_form_title: 17px;
+$font_size_form_header: 18px;
+$font_size_table_text: 14px;
+
+$font_size_table_title: 16px;
+$font_size_table_th: 13px;
+$font_size_table_td: 14px;
+$font_size_table_head: 26px;
+
+$font_size_nav_head:26px;
+$font_size_status:14px ;
+
+$font_size__hello_title:28px ;
+
+
+
+
+// Fonts with responsive calculations
+$fontSize23: calc(23px + var(--fontszoom));
+$fontSize19: calc(19px + var(--fontszoom));
+$fontSize14: calc(14px + var(--fontszoom));
+$fontSize16: calc(16px + var(--fontszoom));
+$fontSize13: calc(13px + var(--fontszoom));
+$fontSize15: calc(15px + var(--fontszoom));
+$fontSize10: calc(10px + var(--fontszoom));
+$fontSize12: calc(12px + var(--fontszoom));
+
+
+// responsive.scss
+:root {
+    --fontszoom: 0px; // Default value
+}
+
+// Larger screens
+@media (min-width: 2000px) {
+    :root {
+        --fontszoom: 118px; // Increase slightly for very large screens
+    }
+}
+
+@media (max-width: 2000px) and (min-width: 1800px) {
+    :root {
+        --fontszoom: 6px; // Increase slightly for 2000px width screen
+    }
+}
+
+@media (max-width: 1800px) and (min-width: 1600px) {
+    :root {
+        --fontszoom: 4px; // Increase slightly for 1800px width screen
+    }
+}
+
+@media (max-width: 1600px) and (min-width: 1400px) {
+    :root {
+        --fontszoom: 2px; // Smaller increase for 1600px width screen
+    }
+}
+
+// Medium to small screens
+@media (max-width: 1400px) and (min-width: 1040px) {
+    :root {
+        --fontszoom: 0px; // Keep original size for medium screens
+    }
+}
+
+@media (max-width: 1040px) and (min-width: 800px) {
+    :root {
+        --fontszoom: -3px; // Slight decrease for smaller screens
+    }
+}
+
+@media (max-width: 800px) and (min-width: 700px) {
+    :root {
+        --fontszoom: -3px; // Decrease for mobile devices
+    }
+}
+
+@media (max-width: 700px) {
+    :root {
+        --fontszoom: -4px; // Slightly smaller on very small devices
+    }
+}

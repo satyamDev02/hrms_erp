@@ -1,0 +1,206 @@
+.tr_CartPie {
+  width: 98%;
+  height: 400px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  // border: 1px solid red  !important;
+
+  margin-left: 20px;
+  .TotalLeaves_Project {
+    margin: 20px;
+    border: 1px solid rgba(125, 125, 125, 0.305);
+    border-radius: 10px;
+    width: 60%;
+    height: 400px;
+
+    .total-leaves {
+      border-bottom: 1px solid rgba(113, 110, 110, 0.328);
+      margin: 0 20px;
+      display: flex;
+      font-size: 14px;
+      color: grey;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 0px;
+    }
+    .pieChart_pro {
+      width: 100%;
+      height: 400px;
+      margin-left: 60px;
+    }
+  }
+  .Current_Day_Status {
+ border: 1px solid #7d7d7d4e;
+    border-radius: 10px;
+        width: 34%;
+    height: 400px;
+    margin-right: 20px !important;
+    h2{
+      font-size: 17px;
+      color: #2A2A2A;
+      border-bottom: 1px solid #7d7d7d4e ;
+      margin: 8px 10px;
+      padding-bottom: 5px;
+      opacity: 0.9;
+      padding: 5px;
+    }
+      p{
+    
+    }
+    .punch-timeline {
+      .punch-timeline__date{
+        opacity: 0.9;
+        font-size: 14px;
+              color: #2A2A2A;
+              margin: 8px 10px;
+              padding-bottom: 5px;
+        margin-left: 20px;
+      }
+      .punch-timeline__entries{
+      margin-left: 20px;
+        .punch-timeline__entry{
+          .punch-timeline__icon{
+            .icon-placeholder{
+              // border: 1px solid red !important;
+              background: #fff;
+              margin-left: -25px;
+              margin-top: -30px;
+              position: absolute;
+
+            }
+          }
+        }
+      }
+  &__date {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  &__entries {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #dcdcdc;
+    }
+  }
+  
+  &__entry {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 2rem;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      background-color: #dcdcdc;
+      border-radius: 10%;
+      margin-top: -13px;
+ transform: rotate(45deg);
+    }
+    
+    &__icon {
+      margin-right: 0.5rem;
+      font-size: 20px;
+      color: #6a6a6a;
+    }
+    
+    &__details {
+      display: flex;
+      flex-direction: column;
+      
+      &__type {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      
+      &__time {
+        font-size: 14px;
+        color: #888;
+      }
+    }
+  }
+}
+
+  }
+}
+
+.custom_legend_pro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // gap: 20px;
+  align-items: start;
+  justify-content: start;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-left: -40px;
+  width: fit-content;
+  gap: 20px;
+  // margin-top: -45%;
+  
+}
+@media only screen and (min-width: 1700px) {
+  .custom_legend_pro{
+    top: 40px !important;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .custom_legend_pro{
+    top: 100px !important;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .custom_legend_pro{
+    top: 150px !important;
+  }
+}
+
+.recharts-text ,.recharts-pie-label-text{
+    color: #2A2A2A !important;
+}
+.recharts-pie-label-line{
+    color: #000;
+    background: #000 !important;
+}
+
+.projec_Balance_second_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 58%;
+  margin: 10px 45px;
+  // border-bottom: 1px solid rgba(128, 128, 128, 0.365);
+  border-bottom: none !important;
+  padding-bottom: 10px;
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .print_right_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    border: 1px solid rgba(128, 128, 128, 0.408);
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

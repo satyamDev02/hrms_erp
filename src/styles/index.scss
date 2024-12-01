@@ -1,0 +1,38 @@
+// index.scss
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    // background: red;
+    border-radius: 10px;
+  }
+}
+
+body {
+  margin: 0 auto;
+}
+
+.app {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  transition: margin-left $animation-duration;
+}
+
+.content.close {
+  margin-left: 60px;
+}
+
+.content.open {
+  margin-left: 250px;
+}

@@ -1,0 +1,211 @@
+// ChartComponent.scss
+.my_p_main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+.chart-container_my {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 65% !important;
+  // margin: 0 auto;
+  margin-left: 25px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #c0c0c047;
+
+  .tab-switch_my {
+    // border: 1px solid red !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .Excellent {
+      border: 1px solid #80808055;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 12px;
+      .excellent {
+        font-size: 16px;
+        color: #6200ea;
+      }
+    }
+    button {
+      background: #ffffff;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 0 5px;
+      &.active {
+        background: #d1c4e9;
+        color: #320b57;
+      }
+
+      &:hover:not(.active) {
+        background: #e0e0e0;
+      }
+    }
+  }
+
+  .charts-wrapper_my {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    .chart-section_my {
+      width: 100%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+      h3 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #333;
+      }
+
+      .rating-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #6200ea;
+      }
+    }
+  }
+}
+
+
+.average-performance {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #c0c0c047;
+  // max-width: 300px;
+  width: 23%;
+  margin-right: 25px;
+  text-align: center;
+  height: 490px;
+    color: #333;
+h3{
+  text-align: left;
+  border-bottom: 1px solid #b3b3b346;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+  .score-gauge {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    margin-top: 40px;
+    // border: 1px solid red !important;
+    .total-score {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #400F6F;
+
+      p {
+        font-size: 26px;
+        margin: 0;
+      }
+      
+      span {
+        font-size: 12px;
+        color: #999;
+      }
+    }
+  }
+
+  .last-month-score {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 10px;
+
+    .icon {
+      font-size: 24px;
+      color: #00C49F;
+      margin-right: 10px;
+      background: #6792BD14;
+border-radius: 5px;
+padding: 5px;
+    }
+
+    .score-details {
+      text-align: left;
+      
+      p {
+        margin: 0;
+        font-size: 20px;
+        color: #333;
+      }
+      
+      span {
+        font-size: 12px;
+        color: #999;
+      }
+    }
+  }
+}
+
+}
+
+
+.lable_chart_ResponsiveContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  .Expected {
+    position: relative; // Ensure positioning context for the dot
+    &::before {
+      content: "";
+      display: block;
+      width: 16px; // Dot size
+      height: 16px; // Dot size
+      border-radius: 50%; // Make it circular
+      background-color: #400f6f; // Dot color
+      position: absolute;
+      left: -25px; // Adjust position to the left of the text
+      top: 50%; // Center vertically
+      transform: translateY(-50%); // Adjust vertical centering
+    }
+  }
+  .Achieved {
+    position: relative; // Ensure positioning context for the dot
+    &::before {
+      content: "";
+      display: block;
+      width: 16px; // Dot size
+      height: 16px; // Dot size
+      border-radius: 50%; // Make it circular
+      background-color: #0eaedf; // Dot color
+      position: absolute;
+      left: -25px; // Adjust position to the left of the text
+      top: 50%; // Center vertically
+      transform: translateY(-50%); // Adjust vertical centering
+    }
+  }
+}

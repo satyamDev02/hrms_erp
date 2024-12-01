@@ -1,0 +1,406 @@
+.breadcrumb-container {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  // background-color: #f8f8f8;
+  background: #eedffc4f;
+  border-radius: 8px;
+  box-shadow: 1px 2px 10px 0.1px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: fit-content !important;
+  .arrow_left_right {
+    border-radius: 20px;
+    padding-top: 4px;
+    background: #efe7f8;
+    .arrow-btn {
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #6f6f6f;
+      svg {
+        color: #400f6f;
+      }
+      svg:hover {
+        color: black;
+      }
+    }
+
+    .disabled_ {
+      svg {
+        color: #6f6f6f !important;
+      }
+    }
+  }
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    .breadcrumb-item {
+      margin: 0px 10px;
+      background: none;
+      border: none;
+      font-size: 16px;
+      color: #6f6f6f;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      position: relative;
+      .icon-home {
+        margin: 0 5px;
+        font-size: 18px;
+        svg {
+          background: #efe7f8;
+          padding: 8px;
+          border-radius: 50%;
+          margin-top: 5px;
+        }
+      }
+    }
+    .btn_option {
+      border: none;
+      outline: none;
+      padding: 8px 13px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      border-radius: 50px;
+      cursor: pointer;
+      span {
+        margin: 0 5px;
+      }
+    }
+    .dropdown-select {
+      margin-right: 2px;
+      .dropdown-menu- {
+        z-index: 99;
+        width: 280px;
+        position: absolute;
+        height: fit-content;
+        background: #fff;
+        margin-top: 215px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        text-align: left;
+        box-shadow: 0px 0px 10px 0.1px rgba(84, 82, 82, 0.247);
+        span {
+          padding: 5px;
+          margin: 5px;
+          border-radius: 5px;
+        }
+        span:hover {
+          width: 87%;
+          background: #e8d2e5;
+          color: #400f6f;
+        }
+      }
+      .one_menu{
+        margin-top: 100px;
+      }
+      .three_menu{
+        margin-top: 180px;
+      }
+    }
+  }
+}
+.Overview_main_h2_title_o {
+  margin: 0 30px;
+}
+.Overview_dashboard {
+  // border: 1px solid red;
+  margin-left: 15px;
+  user-select: none;
+  display: grid;
+  width: 98%;
+  gap: 20px;
+
+  // Default to 4 columns (for desktops and larger screens)
+  grid-template-columns: repeat(4, 1fr);
+
+  // For laptops, switch to 3 columns
+  @media (max-width: 1324px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  // For tablets, switch to 2 columns
+  @media (max-width: 968px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // For mobile devices, switch to 1 column
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2a2a2a;
+  }
+  .Overview_dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #7973734f !important;
+    // padding: 10px;
+    border-radius: 20px;
+    width: 90%;
+    .Overview_box_dashboard {
+      width: 100%;
+  
+      .Overview_top_dashboard {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 20px;
+        font-size: 12px;
+        background: #ebe7ee;
+        .title_o {
+          color: #2a2a2a;
+          padding-bottom: 10px;
+        }
+        .hading_o {
+          .flex-O-h {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .t-n-o {
+              font-size: 38px;
+              color: #2a2a2a;
+            }
+            .o-span-svg {
+              background: #fff;
+              padding: 12px;
+              border-radius: 11px;
+            }
+          }
+        }
+      }
+        .Overview__dashboard {
+       border-radius: 20px;
+        padding: 20px;
+        font-size: 12px;
+        background: #ebe7ee;
+        .title_o {
+          color: #2a2a2a;
+          padding-bottom: 10px;
+        }
+        .hading_o {
+          .flex-O-h {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .t-n-o {
+              font-size: 38px;
+              color: #2a2a2a;
+            }
+            .o-span-svg {
+              background: #fff;
+              padding: 12px;
+              border-radius: 11px;
+            }
+          }
+        }
+      }
+      
+      .Overview_bottom_dashboard {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left_o {
+          font-size: 13px;
+          color: #2a2a2a;
+        }
+        .right_o {
+          display: flex;
+          align-items: center;
+          svg {
+            margin-right: 10px;
+          }
+          span {
+            font-size: 13px;
+            color: #2a2a2a;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hover_tab_nav-2 {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.cart_head_ {
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0 10px 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.326);
+  .l_title {
+    font-size: 18px;
+    color: #2a2a2a;
+  }
+  .btn_r_Export {
+    border: 1px solid #88888881;
+    padding: 5px 10px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    span {
+      margin: 0 3px;
+    }
+  }
+}
+
+.center_cart_text {
+  font-size: 11px;
+  margin-left: -98px !important;
+}
+g {
+}
+.css-1u0lry5-MuiChartsLegend-root {
+  .MuiChartsLegend-series {
+    .MuiChartsLegend-mark {
+      // border-radius: 50% !important;
+    }
+    rect {
+      width: 15px;
+      height: 15px;
+      // border-radius: 50px !important;
+      // margin-left: 130px !important;
+    }
+    text {
+      font-size: 11px !important;
+    }
+  }
+}
+
+#cart_d {
+    overflow: hidden !important;
+  }
+
+@media (max-width: 1200px) {
+  .css-a5rdam-MuiGrid-root{
+    margin-left: 8px !important;
+  }
+  .css-1wt0ckl {
+     margin-left: 50px !important;
+         border: 1px solid red !important;
+  }
+  .css-tuxzvu{
+    width: 100%;
+    border: 1px solid red !important;
+        width: calc(100% + 20px) !important;
+
+  }
+      .css-lmbb0b {
+        width: 110%;
+    }
+}
+
+.css-13z1cr7-MuiChartsSurface-root {
+  position: absolute !important;
+  width: 100%;
+}
+.css-172kpif-MuiResponsiveChart-container > svg {
+  // position: absolute !important;
+}
+.css-132pz3d-MuiChartsAxis-root-MuiChartsXAxis-root {
+  // border: 1px solid red !important;
+  // display: none;
+}
+
+.css-1evyvmv-MuiChartsSurface-root {
+  touch-action: none;
+  width: 100% !important;
+}
+
+.custom-dropdown__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  right: 1px;
+  margin-right: 20px;
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  select {
+    width: 150px; // Set the width as needed
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.2s;
+
+    &:focus {
+      border-color: #400f6f;
+      outline: none;
+    }
+
+    option {
+      padding: 10px;
+    }
+  }
+
+  .month-selector {
+    margin-top: 10px; // Add some space above
+    display: block;
+  }
+}
+
+.lable_chart_ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  .s_count {
+    position: relative; // Ensure positioning context for the dot
+    &::before {
+      content: "";
+      display: block;
+      width: 16px; // Dot size
+      height: 16px; // Dot size
+      border-radius: 10%; // Make it circular
+      background-color: #400f6f; // Dot color
+      position: absolute;
+      left: -25px; // Adjust position to the left of the text
+      top: 50%; // Center vertically
+      transform: translateY(-50%); // Adjust vertical centering
+    }
+  }
+  .s_Percentage {
+    position: relative; // Ensure positioning context for the dot
+    &::before {
+      content: "";
+      display: block;
+      width: 16px; // Dot size
+      height: 16px; // Dot size
+      border-radius: 10%; // Make it circular
+      background-color: #0eaedf; // Dot color
+      position: absolute;
+      left: -25px; // Adjust position to the left of the text
+      top: 50%; // Center vertically
+      transform: translateY(-50%); // Adjust vertical centering
+    }
+  }
+}

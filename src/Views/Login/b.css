@@ -1,0 +1,37 @@
+body
+  padding: 0
+  margin: 0
+
+section
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  top: 0
+  background: linear-gradient(90deg, #0FB2EB, #070BEA)
+  animation:  animate 20s linear infinite
+
+
+h1
+  font-size: 120px
+  font-family: sans-serif
+  text-transform: uppercase
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  -webkit-text-stroke-width: 4px
+  -webkit-text-stroke-color: #ffffff
+  font-weight: 900
+  animation:  animate 10s linear infinite
+  
+  
+@keyframes animate
+  0%
+    filter: hue-rotate(0deg)
+  50%
+    filter: hue-rotate(360deg)
+  100%
+    filter: hue-rotate(0deg)

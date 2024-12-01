@@ -1,0 +1,64 @@
+ .newEmp_img {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .img_add_p {
+                background: #ffffff;
+                z-index: 9;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                margin-left: -20px;
+                // border: 1px solid #A448EE;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                cursor: pointer;
+                color: #27014a;
+              }
+              .div_newEmp_img_team {
+                img {
+                  width: 35px;
+                  height: 35px;
+                  margin-left: -13px;
+                }
+              }
+            }
+
+
+
+.short_ascending_designation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  div{
+    // border:  1px solid red;
+    height: 15px;
+    svg{
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+    }
+    svg:hover{
+      color: black !important;
+    }
+     svg:active{
+      color: rgb(76, 0, 255) !important;
+    }
+  }
+}
+
+@media (max-width: 1293px) {
+  .allEmployeeList .employee-table table th{
+    font-size: 11px;
+  }
+  .allEmployeeList .employee-table table td{
+    font-size: 12px;
+  }
+}

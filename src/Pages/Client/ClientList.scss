@@ -1,0 +1,19 @@
+.client_name_img {
+  div {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border: 1px solid rgba(128, 128, 128, 0.396);
+      border-radius: 50px;
+    }
+    img:hover {
+      transform: scale(1.3);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: linear 0.2s;
+    }
+  }
+}

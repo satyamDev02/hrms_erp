@@ -1,0 +1,115 @@
+@import "../../../styles/variables.scss";
+
+
+ .status-dropdown {
+         
+          width: fit-content;
+          .status-container {
+            position: relative;
+            margin-bottom: 10px;
+          }
+
+          .status-display {
+            //  border: 11px solid red !important;
+          // z-index: 9;
+              padding: 8px 12px;
+            border-radius: 44px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            div {
+              display: flex;
+              gap: 5px;
+            }
+          
+            &.medium {
+              background-color: #0877e678;
+              color: #0070f3;
+            }
+            &.low {
+              background-color: #dce70731;
+              color: #afac1d;
+            }
+            &.high {
+              background-color: #0cad542f;
+              color: #0cad55;
+            }
+           
+
+            .left_dot {
+              width: 10px;
+              margin-right: 5px;
+              height: 10px;
+              border-radius: 50%;
+              // background: #000;
+              &.medium {
+                background-color:#0077ff;
+              }
+              &.low{
+                background-color: #afac1d;
+              }
+              &.high {
+                background-color: #54d92b;
+              }
+
+            }
+          }
+         .status-dis {
+            //  border: 11px solid red !important;
+          // z-index: 9;
+              padding: 8px 12px;
+            border-radius: 44px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            div {
+              display: flex;
+              gap: 5px;
+            }
+          
+            &.not-started {
+              background-color: #0877e678;
+              color: #0070f3 !important;
+            }
+            &.ongoing{
+              background-color: #dce70731;
+              color: #afac1d;
+            }
+            &.completed {
+              background-color: #0cad542f;
+              color: #0cad55;
+            }
+            &.cancelled {
+              background-color: #f0d4d4;
+              color: #c70000;
+            }
+            &.on-hold {
+              background-color: #3e3b3b3f;
+              color: #252425;
+            }
+
+            .left_d {
+              width: 10px;
+              margin-right: 5px;
+              height: 10px;
+              border-radius: 50%;
+              // background: #000;
+              &.not-started {
+                background-color:#0077ff;
+              }
+              &.ongoing{
+                background-color: #afac1d;
+              }
+              &.completed {
+                background-color: #0cad55;
+              }
+              &.cancelled {
+                background-color: #c70000;
+              }
+              &.on-hold {
+                background-color: #252425;
+              }
+            }
+          }
+
+        }

@@ -1,0 +1,231 @@
+/* NavbarForm.scss */
+
+.navbar-items {
+  display: flex;
+  //   margin-bottom: 20px;
+
+  span {
+    // padding: 10px 20px;
+    cursor: pointer;
+    // border-radius: 5px;
+    margin-right: 0.5px;
+    background-color: transparent;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+
+    &.active {
+      background: #4e1584;
+
+      color: rgb(255, 255, 255) !important;
+    }
+    &:last-child{
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    &.filled {
+      background: #400f6f;
+      color: rgb(215, 213, 213);
+    }
+  }
+}
+#form {
+  //   overflow: auto;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.053);
+  // display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+  h2 {
+    font-size: 1rem;
+    color: #2a2a2adb;
+
+  }
+ 
+  .div_heading {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+// border: 1px solid red;  
+input{
+  width: 2%;
+  // align-items: end;
+  margin-left: 70%;
+}  
+    p {
+      color: gray;
+      margin-left: -8px;
+      font-size: 0.8rem;
+      // margin-top: 4px;
+    }
+  }
+  .add_exp {
+    justify-content: space-between;
+  }
+  .from1 {
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+  }
+}
+#add-experience-button {
+  position: fixed;
+  //   margin-left: 70.1%;
+  margin-top: 2%;
+  outline: none;
+  border: none;
+  // border: 1px solid red;
+  &:hover {
+  }
+  .sidebar ul li .hover_P {
+    display: none;
+  }
+}
+
+//
+.li_add_emp {
+  display: flex;
+  cursor: pointer;
+  font-size: 1.6rem;
+  background: #fff;
+  list-style: none;
+  // padding: 10px;
+  //   position: relative;
+  border: none;
+  margin-right: -5px;
+  margin-top: -5px;
+  z-index: 99;
+}
+li #hover_P {
+  //   border: 1px solid red;
+  // margin-bottom: 10px;
+  list-style: none;
+  display: none;
+  p {
+    padding-top: 18px;
+  }
+}
+
+li #hover_P :hover {
+  display: block;
+  animation: 0.5s forwards;
+}
+
+li:hover #hover_P {
+  // transition: height 0.3s ease-in-out;
+
+  display: flex;
+  // border: 1px solid red;
+  position: absolute;
+  background-color: #320b57;
+  box-shadow: 0px 0px 10px 5px rgba(110, 106, 106, 0.185);
+  // border: 1px solid #c600fb;
+  width: 90px;
+  height: 20px;
+  padding: 5px;
+  //   left: 70px;
+
+  //   margin-top: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 9;
+  animation: slideIn 0.3s forwards;
+  //   border: 1px solid red;
+  margin-top: -1px;
+  margin-left: 50px;
+
+  p {
+    color: #ffffffc0;
+    margin-top: 2px;
+    z-index: 9;
+    font-size: 1rem;
+    margin-left: -5px;
+    margin-top: -17px;
+    // cursor: pointer;
+  }
+
+  div {
+    border-bottom: 1px solid #c600fb;
+    border-left: 1px solid #c600fb;
+    position: absolute;
+    width: 20px;
+    height: 22px;
+    margin-top: -2px;
+    rotate: 45deg;
+    background-color: #320b57;
+    margin-left: -16px;
+    // z-index: 1;
+    border-bottom-left-radius: 5px;
+  }
+}
+#remove_p {
+  color: #ffffffc0 !important;
+  font-size: 1rem !important;
+  margin-left: -4px !important;
+}
+
+// #removeBtn{
+//     // position: absolute;
+//     // right: 0;
+//     // margin-left: 68%;
+//     // z-index: 1 !important;
+//     // font-size: 0.8rem;
+//     cursor: pointer;
+//     // margin-bottom: 2%;
+// }
+
+#form_group_Duration {
+  // display: flex;
+  width: 100%;
+  .divDate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    gap: 10px;
+    // flex-direction: column;
+  }
+  #div_Duration {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red !important;
+    width: 37%;
+  }
+  // input {
+  //   width: 100%;
+  //   margin: 0 33px;
+  //   margin-left: 0px;
+  // }
+}
+
+#Experience_form {
+  padding-bottom: 100px;
+  // border: 1px solid red;
+}
+#Description {
+  width: 91.6%;
+  // border: 1px solid red;
+  margin: 0 10px;
+  textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(134, 127, 127, 0.39);
+    border-radius: 10px;
+    outline: none;
+    margin-top: 5px;
+     resize: none;
+  }
+  textarea:hover {
+    outline: none;
+    border: 1px solid #c500fb;
+    box-shadow: 0px 0px 0px 2px rgba(115, 15, 173, 0.307);
+  }
+}
+#Education_form{
+  // border: 1px solid red;
+  padding-bottom: 100px;
+}

@@ -1,0 +1,11 @@
+@mixin inline($aling-item, $justify-content){
+    display: block;
+    align-items: $aling-item;
+    justify-content: $justify-content;
+}
+
+@mixin flex($aligin-item, $justify-content) {
+    display: flex;
+    align-items: $aligin-item;
+    justify-content: $justify-content;
+  }

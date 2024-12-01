@@ -1,0 +1,38 @@
+.day_total_work {
+  position: absolute;
+  background: #fff;
+  color: black;
+  display: none;
+  width: 155px;
+  height: 121px;
+  gap: 0px;
+  border-radius: 0px 4.43px 4.43px 0px;
+  border: 0px 0px 0px 1.11px;
+border-left: 2px solid #45237F !important;
+
+  &:hover {
+    display: block;
+  }
+}
+.day:hover .day_total_work {
+  display: block;
+  border: 1px solid rgba(128, 128, 128, 0.327);
+  z-index: 99;
+  padding: 3px;
+  .date{
+      color: black !important;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 10px;
+    margin-top: 10px;
+    p{
+        font-size: 12px;
+        color: #3a3939;
+    }
+    h6{
+        font-size: 18px;
+        color: #45237F;
+    }
+  }
+}

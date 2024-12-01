@@ -1,0 +1,30 @@
+ .tabs-container-button {
+    border: 1px solid rgba(154, 150, 150, 0.387);
+    width: fit-content;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    .tab-button-swich {
+      border: none;
+      margin: 3px;
+      outline: none;
+      border-radius: 5px;
+
+      padding: 8px 15px;
+      gap: 10px;
+      cursor: pointer;
+      background: #fff;
+      font-size: 14px;
+    }
+    .active-swich {
+      color: #fff;
+      background: #400f6f;
+    }
+  }
+
+
+  #switch_file{
+    transition: 0.3s ease-in;
+    margin-left: 30px !important;
+    margin-top: -8px;
+  }
